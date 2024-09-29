@@ -143,6 +143,7 @@ dialog form {
 
 @media screen and (max-width: 740px) {
   table {
+    width: 92vw;
     display: block;
     overflow-x: scroll;
   }
