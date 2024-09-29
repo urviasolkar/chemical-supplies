@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #212529;
+  --secondary-color: #eee;
+  --warning-color: #f76707;
+  --border-color: #adb5bd;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.displayMessage {
+  font-size: 12px;
+  color: var(--warning-color);
+  margin: 4px;
+}
+
+.top-heading {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1rem 0;
+}
+
+.top-heading h4 {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/*******************************
+TABLE STYLES
+********************************/
+table {
+  width: 80vw;
+  margin: 1rem 1rem 0;
+  border: 2px solid var(--border-color);
+}
+
+th {
+  border-right: 2px solid var(--border-color);
+}
+
+th button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+th :last-child {
+  border-right: none;
+}
+
+td {
+  border-top: 2px solid var(--border-color);
+  border-right: 2px solid var(--border-color);
+  input {
+    width: 100%;
+  }
+}
+
+/*******************************
+DIALOG STYLES
+********************************/
+dialog {
+  width: max-content;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  border: 2px solid var(--border-color);
+
+  padding: 8px;
+}
+
+#dialogClose {
+  float: right;
+  margin: 4px;
+}
+
+dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 8px;
+  div {
+    display: grid;
+    grid-template-columns: 25% 50%;
+    gap: 16px;
+
+    label {
+      font-weight: 600;
+    }
+  }
+}
+
+#buttonDiv {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  button {
+    background-color: var(--secondary-color);
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+}
+
+::backdrop {
+  background-image: linear-gradient(
+    45deg,
+    var(--secondary-color),
+    var(--primary-color)
+  );
+  opacity: 0.75;
+}
+
+/* @media screen and (max-width: 900px) {
+  .top-heading {
+    width: 800px;
+  }
+  table {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-heading {
+    width: 500px;
+  }
+  table {
+    width: 500px;
+  }
+} */

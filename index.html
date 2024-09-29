@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemical Supplies</title>
+    <link href="/index.css" rel="stylesheet" />
+    <script type="text/javascript" src="/data.js"></script>
+    <script type="text/javascript" src="/helper.js"></script>
+  </head>
+  <body onload="onLoad()">
+    <p id="displayMessage" class="displayMessage"></p>
+    <div class="top-heading">
+      <h4>Chemical Supplies</h4>
+      <div class="top-heading--buttons">
+        <button id="cancel">Cancel</button>
+        <button id="add">Add</button>
+        <button id="edit">Edit</button>
+        <button id="move-down">⬇</button>
+        <button id="move-up">⬆</button>
+        <button id="delete">Delete</button>
+        <button id="refresh">Refresh</button>
+        <button id="save">Save</button>
+      </div>
+    </div>
+    <table id="table">
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <dialog>
+      <button id="dialogClose" autofocus>X</button>
+      <p id="displayModalMessage" class="displayMessage"></p>
+    </dialog>
+
+    <script type="text/javascript" src="/index.js"></script>
+  </body>
+</html>
