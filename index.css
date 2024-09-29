@@ -141,20 +141,15 @@ dialog form {
   opacity: 0.75;
 }
 
-/* @media screen and (max-width: 900px) {
-  .top-heading {
-    width: 800px;
-  }
+@media screen and (max-width: 740px) {
   table {
-    width: 800px;
+    display: block;
+    overflow-x: scroll;
   }
 }
 
 @media screen and (max-width: 600px) {
   .top-heading {
-    width: 500px;
+    width: 100vw;
   }
-  table {
-    width: 500px;
-  }
-} */
+}
